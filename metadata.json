@@ -1,0 +1,6 @@
+{
+  "name": "فرصتي | Forsati",
+  "description": "منصة الفرص الأولى في اليمن - وظائف، منح، تدريب، ودورات",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

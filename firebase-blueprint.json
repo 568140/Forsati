@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "opportunities": {
+      "title": "Opportunities",
+      "description": "Job, internship, scholarship, and training opportunities in Yemen",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "organizationId": { "type": "string", "required": true },
+        "organizationName": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "governorate": { "type": "string", "required": true },
+        "type": { "type": "string", "required": true },
+        "status": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "createdAt": { "type": "string", "required": true }
+      }
+    },
+    "userAccounts": {
+      "title": "User Accounts",
+      "description": "User accounts and authentication details",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "role": { "type": "string", "required": true }
+      }
+    },
+    "candidateProfiles": {
+      "title": "Candidate Profiles",
+      "description": "Job seeker profiles and CV details",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "fullName": { "type": "string", "required": true },
+        "governorate": { "type": "string", "required": true }
+      }
+    },
+    "applications": {
+      "title": "Applications",
+      "description": "Candidate applications to published opportunities",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "opportunityId": { "type": "string", "required": true },
+        "candidateId": { "type": "string", "required": true }
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "User notifications",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true }
+      }
+    },
+    "platformSettings": {
+      "title": "Platform Settings",
+      "description": "Global platform configurations, categories, about us content",
+      "fields": {
+        "id": { "type": "string", "required": true }
+      }
+    }
+  }
+}
